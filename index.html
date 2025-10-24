@@ -66,6 +66,24 @@
       .menu-btn{display:inline-block}
     }
 
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .hero{
       display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px;
     }
@@ -154,7 +172,7 @@
       <nav>
         <button class="menu-btn" id="menuBtn">Menu</button>
         <ul id="menuList">
-          <li><a href="#home" class="active">Inicio</a></li>
+          <li><a href="#home">Inicio</a></li>
           <li><a href="#sobre">Sobre mí</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#tecnologias">Tecnologías</a></li>
@@ -193,7 +211,9 @@
       </div>
 
       <aside class="profile-card">
-        <div class="avatar">KM</div>
+        <div class="avatar">
+          <img src="yo.jpg" alt="Foto de Kamilo Caldas">
+        </div>
         <div style="text-align:center;margin-top:8px">
           <div style="font-weight:700">Kamilo Caldas</div>
           <div class="small">Desarrollador — React / React Native / Node</div>
